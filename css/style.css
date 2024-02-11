@@ -1,0 +1,316 @@
+body {
+  background-color: black;
+}
+
+.alfa_footer {
+  background-color: #ffffff;
+  height: 334px;
+  padding-top: 80px;
+  font-family: "Montserrat", sans-serif;
+}
+.alfa_footer_up {
+  display: flex;
+  justify-content: space-evenly;
+  height: 178px;
+}
+.alfa_footer_up-touch, .alfa_footer_up-company, .alfa_footer_up-features, .alfa_footer_up-resources {
+  height: 178px;
+}
+.alfa_footer_up-touch {
+  width: 238px;
+}
+.alfa_footer_up-touch-head {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 11px 0;
+}
+.alfa_footer_up-touch-paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  width: 211px;
+}
+.alfa_footer_up-touch-list {
+  display: flex;
+  padding: 0;
+}
+.alfa_footer_up-touch-list li {
+  padding: 5px;
+  list-style: none;
+  color: black;
+}
+.alfa_footer_up-touch-list img {
+  width: 24px;
+}
+.alfa_footer_up-company {
+  width: 241px;
+}
+.alfa_footer_up-company-head {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 11px 0;
+}
+.alfa_footer_up-company-list {
+  padding: 0;
+}
+.alfa_footer_up-company-list li {
+  padding: 5px;
+  list-style: none;
+  font-size: 14px;
+}
+.alfa_footer_up-company-list li a {
+  text-decoration: none;
+  color: black;
+}
+.alfa_footer_up-features {
+  width: 241px;
+}
+.alfa_footer_up-features-head {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 11px 0;
+}
+.alfa_footer_up-features-list {
+  padding: 0;
+}
+.alfa_footer_up-features-list li {
+  padding: 5px;
+  list-style: none;
+  font-size: 14px;
+}
+.alfa_footer_up-features-list li a {
+  text-decoration: none;
+  color: black;
+}
+.alfa_footer_up-resources {
+  width: 241px;
+}
+.alfa_footer_up-resources-head {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 11px 0;
+}
+.alfa_footer_up-resources-list {
+  padding: 0;
+}
+.alfa_footer_up-resources-list li {
+  padding: 5px;
+  list-style: none;
+  font-size: 14px;
+}
+.alfa_footer_up-resources-list li a {
+  text-decoration: none;
+  color: black;
+}
+.alfa_footer_down {
+  text-align: center;
+  height: 76px;
+  padding-top: 80px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.betta_footer {
+  margin-top: 30px;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.betta_footer-up {
+  background-color: #FAFAFA;
+}
+.betta_footer-up-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  height: 142px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #FAFAFA;
+}
+.betta_footer-up-container-left {
+  width: 509px;
+  height: 62px;
+  margin-top: 40px;
+}
+.betta_footer-up-container-left-head {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.betta_footer-up-container-left-paragraph {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+.betta_footer-up-container-right {
+  width: 236px;
+  height: 52px;
+  text-align: center;
+  margin-top: 40px;
+}
+.betta_footer-up-container-right-button {
+  width: 160px;
+  height: 52px;
+  color: white;
+  background-color: #23A6F0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 38px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.betta_footer-center {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  height: 272px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.betta_footer-center-company {
+  height: 170px;
+  width: 148px;
+}
+.betta_footer-center-company-head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.betta_footer-center-company-list {
+  text-align: left;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.betta_footer-center-company-list li {
+  list-style: none;
+  text-decoration: none;
+}
+.betta_footer-center-company-list li a {
+  text-decoration: none;
+  color: black;
+}
+.betta_footer-center-legal {
+  height: 170px;
+  width: 148px;
+}
+.betta_footer-center-legal-head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.betta_footer-center-legal-list {
+  text-align: left;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.betta_footer-center-legal-list li {
+  list-style: none;
+  text-decoration: none;
+}
+.betta_footer-center-legal-list li a {
+  text-decoration: none;
+  color: black;
+}
+.betta_footer-center-features {
+  height: 170px;
+  width: 148px;
+}
+.betta_footer-center-features-head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.betta_footer-center-features-list {
+  text-align: left;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.betta_footer-center-features-list li {
+  list-style: none;
+  text-decoration: none;
+}
+.betta_footer-center-features-list li a {
+  text-decoration: none;
+  color: black;
+}
+.betta_footer-center-resources {
+  height: 170px;
+  width: 148px;
+}
+.betta_footer-center-resources-head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.betta_footer-center-resources-list {
+  text-align: left;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.betta_footer-center-resources-list li {
+  list-style: none;
+  text-decoration: none;
+}
+.betta_footer-center-resources-list li a {
+  text-decoration: none;
+  color: black;
+}
+.betta_footer-center-touch {
+  height: 170px;
+  width: 320px;
+}
+.betta_footer-center-touch-head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.betta_footer-center-touch-list {
+  text-align: left;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.betta_footer-center-touch-list li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  height: 29px;
+}
+.betta_footer-center-touch-list li a {
+  text-decoration: none;
+  color: black;
+}
+.betta_footer-center-touch-list li a img {
+  width: 22px;
+  height: 22px;
+}
+.betta_footer-center-touch-list li span {
+  margin: 0 0 0 10px;
+}
+.betta_footer-down {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  height: 74px;
+  margin: 0px auto;
+}
+.betta_footer-down-paragraph {
+  font-size: 14px;
+}
+.betta_footer-down-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 62px;
+  height: 24px;
+  margin: 25px 0;
+  width: 112px;
+}
+.betta_footer-down-list a {
+  margin: 0;
+  width: 24px;
+}/*# sourceMappingURL=style.css.map */

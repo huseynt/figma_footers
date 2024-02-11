@@ -1,0 +1,379 @@
+body {
+    background-color: black;
+}
+
+.alfa_footer {
+    background-color: #ffffff;
+    height: 334px;
+    padding-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+
+    &_up {
+        display: flex;
+        justify-content: space-evenly;
+        height: 178px;
+
+        &-touch, &-company, &-features, &-resources {
+            height: 178px;
+        }
+        
+
+        &-touch {
+            width: 238px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+
+            &-paragraph {
+                font-size: 14px;
+                font-weight: 400;
+                width: 211px;
+            }
+
+            &-list {
+                display: flex;
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    color: black;
+                }
+
+                img {
+                    width: 24px;
+                }
+            }
+
+        }
+
+        &-company {
+            width: 241px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-features {
+            width: 241px;
+            
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+            
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-resources {
+            width: 241px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+            
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    &_down {
+        text-align: center;
+        height: 76px;
+        padding-top: 80px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+}
+
+.betta_footer {
+    margin-top: 30px;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+    &-up {
+        background-color: #FAFAFA;
+        
+        &-container {
+            display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        height: 142px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #FAFAFA;
+
+        &-left {
+            width: 509px;
+            height: 62px;
+            margin-top: 40px;
+            
+            &-head {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            &-paragraph {
+                margin: 10px  0 0 0;
+                font-size: 14px;
+            }
+        }
+        &-right {
+            width: 236px;
+            height: 52px;
+            text-align: center;
+            margin-top: 40px;
+
+            &-button {
+                width: 160px;
+                height: 52px;
+                color: white;
+                background-color: #23A6F0;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 0 38px;
+                padding: 0;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        }
+    }
+
+    &-center {
+        display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        height: 272px;
+        margin: 0 auto;
+        background-color: #fff;
+
+        &-company {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-legal {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-features {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-resources {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-touch {
+            height: 170px;
+            width: 320px;
+
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    display: flex;
+                    height: 29px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        
+                        img {
+                            width: 22px;
+                            height: 22px;
+                        }
+
+                    }
+                    
+                    span {
+                        margin: 0 0 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-down {
+        display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        height: 74px;
+        margin: 0px auto;
+
+        &-paragraph {
+            font-size: 14px;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0 62px;
+            height: 24px;
+            margin: 25px 0;
+            width: 112px;
+
+            a {
+                margin: 0;
+                width: 24px;
+            }
+        }
+    }
+}
