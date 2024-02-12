@@ -1,7 +1,8 @@
 body {
     background-color: black;
+    font-family: 'Montserrat', sans-serif;
 }
-
+// alfa footer ---------------------------------------
 .alfa_footer {
     background-color: #ffffff;
     height: 334px;
@@ -12,6 +13,8 @@ body {
         display: flex;
         justify-content: space-evenly;
         height: 178px;
+        width: 1050px;
+        margin: 0 auto;
 
         &-touch, &-company, &-features, &-resources {
             height: 178px;
@@ -137,6 +140,7 @@ body {
 
 }
 
+// betta footer ----------------------------------------------------------------
 .betta_footer {
     margin-top: 30px;
     background-color: #fff;
@@ -336,7 +340,7 @@ body {
                         color: black;
                         
                         img {
-                            width: 22px;
+                            width: 21px;
                             height: 22px;
                         }
 
@@ -377,3 +381,762 @@ body {
         }
     }
 }
+
+// gamma footer -----------------------------------------------------------
+.gamma_footer {
+    background: #ffffff;
+    margin-top: 30px;
+
+    &-up {
+        display: flex;
+        width: 1050px;
+        height: 111px;
+        padding-top: 25px;
+        margin: 0 auto;
+    
+        &-element {
+            display: flex;
+            width: 265px;
+            height: 61px;
+            padding-top: 25px;
+
+            &-left {
+                width: 70px;
+                height: 61px;
+
+                &-image {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            &-right {
+                width: 153px;
+                height: 61px;
+
+                &-head {
+                    font-size: 14px;
+                    margin: 0;
+                }
+
+                &-paragraph {
+                    font-size: 12px;
+                    margin: 5px 0 0 0;
+                }
+            }
+        }
+    }
+
+    // footer center container
+    &-center {
+        display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        height: 220px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-color: #fff;
+
+        &-company {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-legal {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-features {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-resources {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-touch {
+            height: 170px;
+            width: 320px;
+
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    display: flex;
+                    height: 29px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        
+                        img {
+                            width: 21px;
+                            height: 22px;
+                        }
+
+                    }
+                    
+                    span {
+                        margin: 0 0 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // footer down container
+    &-down {
+        background-color: #FAFAFA;
+        height: 142px;
+        
+        &-container {
+            display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        height: 142px;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #FAFAFA;
+
+        &-left {
+            width: 509px;
+            height: 62px;
+            margin-top: 40px;
+            
+            &-head {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            &-paragraph {
+                margin: 10px  0 0 0;
+                font-size: 14px;
+            }
+        }
+        &-right {
+            width: 236px;
+            height: 52px;
+            text-align: center;
+            margin-top: 40px;
+
+            &-button {
+                width: 160px;
+                height: 52px;
+                color: white;
+                background-color: #23A6F0;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 0 38px;
+                padding: 0;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+        }
+    }
+
+}
+
+// delta footer ----------------------------------------
+.delta_footer {
+    background-color: #ffffff;
+    height: 338px;
+    margin-top: 30px;
+    padding-top: 80px;
+
+    &-up {
+        display: flex;
+        justify-content: space-evenly;
+        height: 178px;
+        width: 1050px;
+        margin: 0 auto;
+
+        &-touch, &-company, &-features, &-resources {
+            height: 178px;
+        }
+        
+
+        &-touch {
+            width: 526px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+
+            &-paragraph {
+                font-size: 14px;
+                font-weight: 400;
+                width: 211px;
+            }
+
+            &-list {
+                display: flex;
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    color: black;
+                }
+
+                img {
+                    width: 24px;
+                }
+            }
+
+        }
+
+        &-company {
+            width: 241px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-features {
+            width: 241px;
+            
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+            
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-resources {
+            width: 241px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+            
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    &-down {
+        text-align: center;
+        height: 76px;
+        padding-top: 80px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+}
+
+// epsilon footer ----------------------------------------
+.epsilon_footer {
+    background-color: #2A7CC7;
+    color: #fff;
+    height: 338px;
+    margin-top: 30px;
+    padding-top: 80px;
+
+    &-up {
+        display: flex;
+        justify-content: space-evenly;
+        height: 178px;
+        width: 1050px;
+        margin: 0 auto;
+
+        &-touch, &-company, &-features, &-resources {
+            height: 178px;
+        }
+        
+
+        &-touch {
+            width: 526px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+
+            &-paragraph {
+                font-size: 14px;
+                font-weight: 400;
+                width: 211px;
+            }
+
+            &-list {
+                display: flex;
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                }
+
+                img {
+                    width: 24px;
+                }
+            }
+
+        }
+
+        &-company {
+            width: 241px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &-features {
+            width: 241px;
+            
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+            
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &-resources {
+            width: 241px;
+
+            &-head {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 11px 0;
+            }
+            
+            &-list {
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    list-style: none;
+                    font-size: 14px;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    &-down {
+        text-align: center;
+        height: 76px;
+        padding-top: 80px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+}
+
+// zeta footer ----------------------------------------
+.zeta_footer {
+    background-color: #ffffff;
+    margin: 30px auto;
+
+    // zeta up
+    &-up {
+        display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        height: 138px;
+        margin: 0px auto;
+
+        &-paragraph {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 57px;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0 62px;
+            height: 24px;
+            margin: 57px 0;
+            width: 112px;
+
+            a {
+                margin: 0;
+                width: 24px;
+            }
+        }
+    }   
+
+    // zeta center 
+    &-center {
+        display: flex;
+        justify-content: space-between;
+        width: 1050px;
+        height: 220px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-color: #fff;
+
+        &-company {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-legal {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-features {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-resources {
+            height: 170px;
+            width: 148px;
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-list {
+                text-align: left;
+                padding: 0;
+                font-size: 14px;
+                line-height: 24px;
+
+                li {
+                    list-style: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-touch {
+            height: 170px;
+            width: 320px;
+
+
+            &-head {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &-subscribe {
+                display: flex;
+                width: 321px;
+                height: 58px;
+
+                &-left {
+                    width: 204px;
+                    height: 56px;
+                    background-color: #F9F9F9;
+                    margin: 0;
+                    text-indent: 10px;
+                    border: 1px solid #E6E6E6;
+
+                    &-text {
+                        height: 58px;
+                        padding: 0;
+                        border: none;
+                        background-color: #F9F9F9;
+                        color: #737373;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            
+                &-right {
+                    width: 113px;
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+                    background-color: #23A6F0;
+                    color: white;
+                    border-radius: 0 5px 5px 0;
+                    cursor: pointer;
+                }
+            }
+
+            &-paragraph {
+                height: 28px;
+                font-size: 12px;
+                color: #737373;
+            }
+        }
+    }
+
+    // zeta down
+    &-down {
+        text-align: left;
+        width: 1050px;
+        height: 49px;
+        padding-top: 25px;
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+}
+
