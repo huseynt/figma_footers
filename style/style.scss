@@ -1,15 +1,17 @@
+@import 'mixin';
+@import 'variable';
+
 body {
     background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
-@import '_mixin.scss';
-
 // alfa footer ---------------------------------------
 .alfa_footer {
     background-color: #ffffff;
-    padding: 80px 10% 25px;
+    padding: $pad;
     font-family: 'Montserrat', sans-serif;
+
 
     
     @include mobile {
@@ -24,9 +26,10 @@ body {
         justify-content: space-between;
         margin: 0 auto;
         column-gap: 20px;
+        
 
         @include mobile {
-            max-width: 220px;
+            max-width: 240px;
             display: flex;
             flex-direction: column;
         }
@@ -154,7 +157,7 @@ body {
 
 // betta footer ----------------------------------------------------------------
 .betta_footer {
-    padding: 80px 10% 25px;
+    padding: $pad;
     margin-top: 30px;
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -166,8 +169,7 @@ body {
     &-up {
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
-        padding: 0;
+        @extend %res;
 
         @include mobile {
             display: flex;
@@ -209,7 +211,7 @@ body {
 
             &-button {
                 color: white;
-                background-color: #23A6F0;
+                background-color: $blue;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
@@ -409,7 +411,7 @@ body {
 .gamma_footer {
     background: #ffffff;
     margin-top: 30px;
-    padding: 80px 10% 25px;
+    padding: $pad;
 
     @include mobile {
         padding: 80px 0 25px;
@@ -425,6 +427,7 @@ body {
         @include mobile {
             max-width: 330px;
             flex-direction: column;
+            row-gap: 20px;
         }
     
         &-element {
@@ -670,7 +673,7 @@ body {
 
             &-button {
                 color: white;
-                background-color: #23A6F0;
+                background-color: $blue;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
@@ -683,28 +686,30 @@ body {
 
 }
 
-// delta footer ----------------------------------------
+// delta footer -------------------------------
 .delta_footer {
-    display: none;
     background-color: #ffffff;
-    height: 338px;
     margin-top: 30px;
-    padding-top: 80px;
+
 
     &-up {
-        display: flex;
+        padding: $pad;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
         justify-content: space-evenly;
-        height: 178px;
-        width: 1050px;
         margin: 0 auto;
 
-        &-touch, &-company, &-features, &-resources {
-            height: 178px;
+        @include mobile {
+            padding: 80px 10% 25px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            max-width: 240px
         }
         
 
         &-touch {
-            width: 526px;
 
             &-head {
                 font-size: 24px;
@@ -736,7 +741,6 @@ body {
         }
 
         &-company {
-            width: 241px;
 
             &-head {
                 font-size: 24px;
@@ -761,7 +765,6 @@ body {
         }
 
         &-features {
-            width: 241px;
             
 
             &-head {
@@ -815,9 +818,15 @@ body {
     &-down {
         text-align: center;
         height: 76px;
-        padding-top: 80px;
+        padding: $pad;
         margin: 0;
         font-size: 14px;
+        background-color: #ececec;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 
@@ -825,31 +834,31 @@ body {
 
 // epsilon footer ----------------------------------------
 .epsilon_footer {
-    display: none;
-    background-color: #2A7CC7;
-    color: #fff;
-    height: 338px;
+    background-color: $blue;
     margin-top: 30px;
-    padding-top: 80px;
+    color: #ffffff;
+
 
     &-up {
-        display: flex;
+        padding: $pad;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
         justify-content: space-evenly;
-        height: 178px;
-        width: 1050px;
         margin: 0 auto;
 
-        &-touch, &-company, &-features, &-resources {
-            height: 178px;
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            max-width: 240px
         }
         
 
         &-touch {
-            width: 526px;
 
             &-head {
-                font-size: 24px;
-                font-weight: 700;
+                @extend %text-med;
                 margin: 11px 0;
             }
 
@@ -857,6 +866,7 @@ body {
                 font-size: 14px;
                 font-weight: 400;
                 width: 211px;
+                
             }
 
             &-list {
@@ -866,6 +876,7 @@ body {
                 li {
                     padding: 5px;
                     list-style: none;
+                    color: #ffffff;
                 }
 
                 img {
@@ -876,11 +887,9 @@ body {
         }
 
         &-company {
-            width: 241px;
 
             &-head {
-                font-size: 24px;
-                font-weight: 700;
+                @extend %text-med;
                 margin: 11px 0;
             }
 
@@ -894,19 +903,17 @@ body {
                     
                     a {
                         text-decoration: none;
-                        color: #fff;
+                        color: #ffffff;
                     }
                 }
             }
         }
 
         &-features {
-            width: 241px;
             
 
             &-head {
-                font-size: 24px;
-                font-weight: 700;
+                @extend %text-med;
                 margin: 11px 0;
             }
             
@@ -920,7 +927,7 @@ body {
                     
                     a {
                         text-decoration: none;
-                        color: #fff;
+                        color: #ffffff;
                     }
                 }
             }
@@ -930,8 +937,7 @@ body {
             width: 241px;
 
             &-head {
-                font-size: 24px;
-                font-weight: 700;
+                @extend %text-med;
                 margin: 11px 0;
             }
             
@@ -945,7 +951,7 @@ body {
                     
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: #ffffff;
                     }
                 }
             }
@@ -955,9 +961,14 @@ body {
     &-down {
         text-align: center;
         height: 76px;
-        padding-top: 80px;
+        padding: $pad;
         margin: 0;
         font-size: 14px;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 
@@ -965,37 +976,42 @@ body {
 
 // zeta footer ----------------------------------------
 .zeta_footer {
-    display: none;
     background-color: #ffffff;
     margin: 30px auto;
+    padding: 0 10% 25px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     // zeta up
     &-up {
         display: flex;
         justify-content: space-between;
-        width: 1050px;
-        height: 138px;
-        margin: 0px auto;
+        margin: 0;
+        padding: 40px 0;
+        border-bottom: 1px solid #c3c3c3;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            width: 240px;
+        }
 
         &-paragraph {
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 57px;
+            margin: 0;
+            @extend %text-med;
         }
 
         &-list {
             display: flex;
-            justify-content: space-between;
             list-style: none;
-            padding: 0 62px;
-            height: 24px;
-            margin: 57px 0;
-            width: 112px;
-
-            a {
-                margin: 0;
-                width: 24px;
-            }
+            margin: 0;
+            padding: 0;
+            column-gap: 10px;
         }
     }   
 
@@ -1003,15 +1019,17 @@ body {
     &-center {
         display: flex;
         justify-content: space-between;
-        width: 1050px;
-        height: 220px;
-        margin: 0 auto;
-        padding-top: 50px;
+        margin: 0;
+        padding: 40px 0;
         background-color: #fff;
 
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            max-width: 240px;
+        }
+
         &-company {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -1037,8 +1055,6 @@ body {
         }
 
         &-legal {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -1064,8 +1080,6 @@ body {
         }
 
         &-features {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -1091,8 +1105,6 @@ body {
         }
 
         &-resources {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -1118,9 +1130,6 @@ body {
         }
 
         &-touch {
-            height: 170px;
-            width: 320px;
-
 
             &-head {
                 font-size: 16px;
@@ -1130,42 +1139,53 @@ body {
 
             &-subscribe {
                 display: flex;
-                width: 321px;
+                max-width: 321px;
                 height: 58px;
 
+
                 &-left {
-                    width: 204px;
+                    max-width: 204px;
                     height: 56px;
                     background-color: #F9F9F9;
                     margin: 0;
-                    text-indent: 10px;
                     border: 1px solid #E6E6E6;
+
+                    
+                    @include mobile {
+                        max-width: 150px; 
+                    }
 
                     &-text {
                         height: 58px;
-                        padding: 0;
+                        padding: 0 0 0 5px;
                         border: none;
                         background-color: #F9F9F9;
                         color: #737373;
                         font-weight: 400;
                         font-size: 14px;
+
+                        @include mobile {
+                            max-width: 145px; 
+                        }
                     }
                 }
             
                 &-right {
-                    width: 113px;
-                    padding: 0;
+                    padding: 15px 30px;
                     margin: 0;
                     border: none;
-                    background-color: #23A6F0;
+                    background-color: $blue;
                     color: white;
                     border-radius: 0 5px 5px 0;
                     cursor: pointer;
+
+                    @include mobile {
+                        padding: 15px 20px;
+                    }
                 }
             }
 
             &-paragraph {
-                height: 28px;
                 font-size: 12px;
                 color: #737373;
             }
@@ -1175,13 +1195,17 @@ body {
     // zeta down
     &-down {
         text-align: left;
-        width: 1050px;
-        height: 49px;
-        padding-top: 25px;
-        margin: 0 auto;
+        padding: 25px 0 25px;
+        margin: 0;
         font-size: 14px;
         font-weight: 700;
-    }
+        color: #737373;
 
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }
 
