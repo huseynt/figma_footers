@@ -2,27 +2,37 @@ body {
     background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
+
+@import '_mixin.scss';
+
 // alfa footer ---------------------------------------
 .alfa_footer {
     background-color: #ffffff;
-    height: 334px;
-    padding-top: 80px;
+    padding: 80px 10% 25px;
     font-family: 'Montserrat', sans-serif;
+
+    
+    @include mobile {
+        padding: 80px 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &_up {
         display: flex;
-        justify-content: space-evenly;
-        height: 178px;
-        width: 1050px;
+        justify-content: space-between;
         margin: 0 auto;
+        column-gap: 20px;
 
-        &-touch, &-company, &-features, &-resources {
-            height: 178px;
+        @include mobile {
+            max-width: 220px;
+            display: flex;
+            flex-direction: column;
         }
         
 
         &-touch {
-            width: 238px;
 
             &-head {
                 font-size: 24px;
@@ -54,7 +64,6 @@ body {
         }
 
         &-company {
-            width: 241px;
 
             &-head {
                 font-size: 24px;
@@ -79,8 +88,7 @@ body {
         }
 
         &-features {
-            width: 241px;
-            
+
 
             &-head {
                 font-size: 24px;
@@ -105,7 +113,6 @@ body {
         }
 
         &-resources {
-            width: 241px;
 
             &-head {
                 font-size: 24px;
@@ -132,81 +139,102 @@ body {
 
     &_down {
         text-align: center;
-        height: 76px;
         padding-top: 80px;
         margin: 0;
         font-size: 14px;
+
+        @include mobile {
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 }
 
 // betta footer ----------------------------------------------------------------
 .betta_footer {
+    padding: 80px 10% 25px;
     margin-top: 30px;
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
 
+    @include mobile {
+        padding: 80px 0 25px;
+    }
+
     &-up {
-        background-color: #FAFAFA;
-        
-        &-container {
-            display: flex;
+        display: flex;
         justify-content: space-between;
-        width: 1050px;
-        height: 142px;
         margin: 0 auto;
         padding: 0;
-        background-color: #FAFAFA;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+        }
+        
 
         &-left {
-            width: 509px;
-            height: 62px;
-            margin-top: 40px;
+
+            @include mobile {
+                max-width: 240px;
+                display: flex;
+                flex-direction: column;
+            }
             
             &-head {
                 margin: 0;
                 font-size: 24px;
                 font-weight: 700;
+
             }
             &-paragraph {
                 margin: 10px  0 0 0;
                 font-size: 14px;
+
+                @include mobile {
+                    max-width: 183px;
+                }
             }
         }
         &-right {
-            width: 236px;
-            height: 52px;
-            text-align: center;
-            margin-top: 40px;
+            
+            @include mobile {
+                margin-top: 50px;
+                width: 240px;
+            }
 
             &-button {
-                width: 160px;
-                height: 52px;
                 color: white;
                 background-color: #23A6F0;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
-                margin: 0 38px;
-                padding: 0;
+                margin: 0;
+                padding: 15px 40px;
                 font-size: 14px;
                 font-weight: 700;
             }
         }
-        }
+    
     }
 
     &-center {
         display: flex;
         justify-content: space-between;
-        width: 1050px;
-        height: 272px;
         margin: 0 auto;
         background-color: #fff;
 
+        @include mobile {
+            max-width: 240px;
+            flex-direction: column;
+            padding: 50px 0;
+        }
+
         &-company {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -232,8 +260,6 @@ body {
         }
 
         &-legal {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -259,8 +285,6 @@ body {
         }
 
         &-features {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -286,8 +310,6 @@ body {
         }
 
         &-resources {
-            height: 170px;
-            width: 148px;
 
             &-head {
                 font-size: 16px;
@@ -313,8 +335,6 @@ body {
         }
 
         &-touch {
-            height: 170px;
-            width: 320px;
 
 
             &-head {
@@ -357,9 +377,12 @@ body {
     &-down {
         display: flex;
         justify-content: space-between;
-        width: 1050px;
-        height: 74px;
         margin: 0px auto;
+
+        @include mobile {
+            max-width: 240px;
+            flex-direction: column;
+        }
 
         &-paragraph {
             font-size: 14px;
@@ -369,7 +392,7 @@ body {
             display: flex;
             justify-content: space-between;
             list-style: none;
-            padding: 0 62px;
+            padding: 0;
             height: 24px;
             margin: 25px 0;
             width: 112px;
@@ -386,33 +409,38 @@ body {
 .gamma_footer {
     background: #ffffff;
     margin-top: 30px;
+    padding: 80px 10% 25px;
+
+    @include mobile {
+        padding: 80px 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &-up {
         display: flex;
-        width: 1050px;
-        height: 111px;
-        padding-top: 25px;
-        margin: 0 auto;
+        justify-content: space-between;
+
+        @include mobile {
+            max-width: 330px;
+            flex-direction: column;
+        }
     
         &-element {
             display: flex;
-            width: 265px;
-            height: 61px;
-            padding-top: 25px;
+
+            @include mobile {
+                width: 250px;
+            }
 
             &-left {
                 width: 70px;
                 height: 61px;
-
-                &-image {
-                    width: 50px;
-                    height: 50px;
-                }
             }
 
             &-right {
-                width: 153px;
-                height: 61px;
+                max-width: 153px;
 
                 &-head {
                     font-size: 14px;
@@ -431,15 +459,20 @@ body {
     &-center {
         display: flex;
         justify-content: space-between;
-        width: 1050px;
-        height: 220px;
-        margin: 0 auto;
         padding-top: 50px;
         background-color: #fff;
 
+        @include mobile {
+            max-width: 240px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         &-company {
-            height: 170px;
-            width: 148px;
+
+            @include mobile {
+                width: 240px;
+            }
 
             &-head {
                 font-size: 16px;
@@ -465,8 +498,10 @@ body {
         }
 
         &-legal {
-            height: 170px;
-            width: 148px;
+
+            @include mobile {
+                width: 240px;
+            }
 
             &-head {
                 font-size: 16px;
@@ -492,8 +527,10 @@ body {
         }
 
         &-features {
-            height: 170px;
-            width: 148px;
+
+            @include mobile {
+                width: 240px;
+            }
 
             &-head {
                 font-size: 16px;
@@ -519,8 +556,10 @@ body {
         }
 
         &-resources {
-            height: 170px;
-            width: 148px;
+
+            @include mobile {
+                width: 240px;
+            }
 
             &-head {
                 font-size: 16px;
@@ -546,9 +585,10 @@ body {
         }
 
         &-touch {
-            height: 170px;
-            width: 320px;
-
+            
+            @include mobile {
+                width: 240px;
+            }
 
             &-head {
                 font-size: 16px;
@@ -589,53 +629,55 @@ body {
 
     // footer down container
     &-down {
-        background-color: #FAFAFA;
-        height: 142px;
-        
-        &-container {
-            display: flex;
+        display: flex;
         justify-content: space-between;
-        width: 1050px;
-        height: 142px;
-        margin: 0 auto;
-        padding: 0;
+        margin: 0;
+        padding: 40px 0 25px;
         background-color: #FAFAFA;
 
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+        
+
         &-left {
-            width: 509px;
-            height: 62px;
-            margin-top: 40px;
             
             &-head {
                 margin: 0;
                 font-size: 24px;
                 font-weight: 700;
+
+                @include mobile {
+                    max-width: 240px;
+                }
             }
             &-paragraph {
                 margin: 10px  0 0 0;
                 font-size: 14px;
+
+                @include mobile {
+                    max-width: 183px;
+                }
             }
         }
         &-right {
-            width: 236px;
-            height: 52px;
-            text-align: center;
-            margin-top: 40px;
+
+            @include mobile {
+                max-width: 240px;
+                margin-top: 20px;
+            }
 
             &-button {
-                width: 160px;
-                height: 52px;
                 color: white;
                 background-color: #23A6F0;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
-                margin: 0 38px;
-                padding: 0;
+                padding: 15px 40px;
                 font-size: 14px;
                 font-weight: 700;
             }
-        }
         }
     }
 
@@ -643,6 +685,7 @@ body {
 
 // delta footer ----------------------------------------
 .delta_footer {
+    display: none;
     background-color: #ffffff;
     height: 338px;
     margin-top: 30px;
@@ -782,6 +825,7 @@ body {
 
 // epsilon footer ----------------------------------------
 .epsilon_footer {
+    display: none;
     background-color: #2A7CC7;
     color: #fff;
     height: 338px;
@@ -921,6 +965,7 @@ body {
 
 // zeta footer ----------------------------------------
 .zeta_footer {
+    display: none;
     background-color: #ffffff;
     margin: 30px auto;
 
